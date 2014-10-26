@@ -14,6 +14,7 @@ using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 
 // The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=391641
+using Windows.UI.Xaml.Shapes;
 
 namespace Tinker
 {
@@ -43,6 +44,18 @@ namespace Tinker
             // Windows.Phone.UI.Input.HardwareButtons.BackPressed event.
             // If you are using the NavigationHelper provided by some templates,
             // this event is handled for you.
+        }
+
+        private void Ellipse1_DoubleTapped(object sender, DoubleTappedRoutedEventArgs e)
+        {
+            Ellipse1.Width = Ellipse1.Width*2;
+            Ellipse1.Height = Ellipse1.Height*2;
+        }
+
+        private void Ellipse1_Tapped(object sender, TappedRoutedEventArgs e)
+        {
+            Ellipse1.Width = Ellipse1.Width/2;
+            Ellipse1.Height = Ellipse1.Height/2;
         }
     }
 }

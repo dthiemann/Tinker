@@ -9,7 +9,7 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
-        <Ellipse x:Name="Ellipse1"
+        <Ellipse x:ConnectionId='1' x:Name="Ellipse1"
                  Fill="#FFF4F4F5"
                  HorizontalAlignment="Left"
                  Height="100"
@@ -17,7 +17,8 @@
                  Stroke="Black"
                  VerticalAlignment="Top"
                  Width="100"
-                 DoubleTapped="Ellipse1_DoubleTapped"
-                 Tapped="Ellipse1_Tapped" />
+                                                     
+                                          />
     </Grid>
 </Page>
+
